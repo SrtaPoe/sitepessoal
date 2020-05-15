@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*imagem de fundo, fonte e dimensões */
+body {
+  background-image: url('../img/jo3.png');
+  background-size: auto 160vh; 
+  font-family: 'Roboto Mono', monospace;
+  height: 100vh;
+  font-size: 18px;
+
+}
+
+/*Se a tela tiver menos de 400px vai carregar estes estilos*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+}
+
+header {
+  height: 50vh;
+  display: flow-root
+}  
+
+
+.menu {
+  background-color: #fffefe;
+  position: fixed;
+  width: 100vw;
+  top: 2;
+  font-family: 'Roboto Mono', monospace;
+  line-height: normal;
+  display: flexbox;
+
+}
+
+.menu a:hover {
+  background-color: rgba(29, 7, 29, 0.5);
+  text-decoration: none;
+  text-shadow: 0px 0px 20px rgba(47, 45, 47, 0.9);
+
+}
+
+
+/* especificações do menu */
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 8px;
+}
+
+
+.menu li {
+  list-style: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color:  #0f0f0f;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-subtitle2,
+.site-subtitle,
+.site-title {
+  text-align: center;
+  color: #141414;
+  
+ 
+}
+
+/* título do site */
+.site-title {
+  font-size: 50px;
+  align-items: center;
+  margin-top: 150px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+/* ruby programmer aqui */
+.site-subtitle {
+  font-style: italic;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+
+/*personalização do pequeno texto de apresentação */
+.text {
+  align-items: center;
+  background: #131212;
+  border-radius: 8px;
+  box-shadow: 0 0 10px;
+  color: #f8f5f5;
+  font-size: px;
+  margin: 320px;
+  margin-top: 170px;
+  padding: 25px;
+  text-align: center;
+}
+
+
+.contato {
+  align-items: center;
+  display: flow-root;
+
+}
+
+/*definições da aparência do elemento portfólio */
+  .portfolio {
+    align-content: center;
+    align-items: center;
+    display: flexbox;
+    font-size: 10px;
+    justify-content: center;
+    padding: 250px; 
+    text-decoration-color: rgb(7, 6, 6);
+  }
+
+/*menu portfolio e contato compartilhando mesmas especifações */
+.contato h2,
+.portfolio h2 {
+  color: rgb(0, 0, 0);
+  font-family: 'Press Start 2P', cursive;
+  font-size: em;
+  margin-bottom: 2.5em;
+}
+
+/*formando o grid e sua posição na tela */
+  .portfolio .grid {
+    display: flex;
+    color: black;
+    text-align: center;
+  
+  }
+  
+  .portfolio h2 {
+    font-family: 'VT323', monospace;
+    color: rgb(255, 255, 255);
+  }
+  
+  @media (min-width: 560px) {
+    .portfolio .grid { 
+    grid-template-columns: 200px 200px;
+    }
+  }
+  
+  @media (min-width: 870px) {
+    .portfolio .grid { 
+    grid-template-columns: 200px 200px  200px 200px;
+    }
+   }
+  
+  .portfolio figure {
+    text-align: center;
+  }
+  
+
+  /* rotate serve para rotação das imagens(x,y) valores negativos fazem o giro ser inverso ao marco 0*/
+  .img-portfolio {
+   height: 180px;
+   width: 180px;
+   margin: 50px;
+   object-fit: cover;
+   object-position: left bottom;
+   transition: transform 500ms;
+  }
+
+  /*uso do transition para controle do efeito. Sua ausência causa uma impressão de descaso. */
+  .img-portfolio:hover {
+    transform: scale(1.5);
+  }
+
+  
+
+  .contato {
+    padding: -100px;
+    display: flexbox;
+    font-size: 20px;
+    justify-content: center
+    
+  }
+
+  .contato .icons {
+    text-align: center;
+  }
+
+  
+  .contato a {
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+    padding: 5px;
+    margin: -5px;
+    align-items: center;
+    text-align: center;
+    
+
+   }
+
+.contato a:active,
+.contato a:hover  {
+  text-decoration: none;
+  text-shadow: 0px 0px 20px rgba(47, 45, 47, 0.5);
+}

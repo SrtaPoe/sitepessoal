@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Joanice Oliveira</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="<link href="
+        https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Code+Pro:ital@1&family=VT323&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/8551a6ad49.js" crossorigin="anonymous"></script></script>
+</head>
+
+<body>
+    <header>
+  <!--  <section class="sobre"></section>
+        <h2>Sobre</h2>
+        <figure>
+    <img src="" alt="">
+
+        </figure>
+   <p>
+    Programadora iniciante em JavaScript, Ruby e Python. Apaixonada por C, mas até hoje brigando com os ponteiros.
+    Bacharel em Turismo pela UFMA e pós-graduanda em Gestão de Projetos. 
+   </p>
+
+    <p>
+    Atualmente professora de informática, mas estuda para ser desenvolvedora de softwares educacionais para crianças e adolescentes com
+    transtornos de aprendizagem como ela, porque sabe que o sistema educacional ainda é formal e "cego" para as necessidades das pessoas.
+    </p>
+    
+
+   <p>
+    Adminstradora do Blog Alquimia Literária onde fala sobre os livros que lẽ, séries que maratona nas madrugadas e os filmes na qual quer dar uma 
+    de crítica de cinema e nas horas vagas estuda loucamente para uma vaga no mestrado e nos dois grupos de pesquisa que na qual abraçou quando
+    decidiu fazer uma graduação em Ciência da Computação.
+   </p>
+
+   <p>
+       Este site foi construído durante <a href="https://www.alura.com.br/imersao-css"> Imersão CSS da Alura! </a> 
+   </p>
+
+-->  
+
+        <nav class="menu">
+            <ul class="container">
+                <li><a href="https://jhoaniceoliveira.wixsite.com/josoueu" target="_blank">Sobre</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#contato" >Contatos</a></li>
+            </ul>
+        </nav>
+        <div class="Titulos">
+
+            <h1 class="site-title">Joanice Oliveira</h1>
+            <h2 class="site-subtitle">ruby programmer</h2>
+            <h4 class="text">Olá, sou uma programadora surtando com CSS e reafirmando que HTML e CSS não são linguagens de
+                programação. </h4>
+            </header>
+            <script>
+     
+              function typeWriter(elemento) {
+                const textoArray = elemento.innerHTML.split("");
+                elemento.innerHTML = "";
+                textoArray.forEach(function(letra, i) {
+               setTimeout(function() {
+                elemento.innerHTML += letra;
+               }, 35 * i)
+     
+                });
+              }
+              
+              const texto = document.querySelector('h4');
+              typeWriter(texto);
+
+     /*essa função foi retirada do Stack overflow e tem uso de JS */
+
+            </script>
+        </div>
+    </header>
+    <section class="portfolio container" id="portfolio">
+        <h2>Projetos</h2>
+        <div class="grid">
+            <figure>
+                <img class="img-portfolio" src="../2-Imersao-CSS/img/programadora3.png" alt="Programadora">
+                <figcaption>Programação JS e Ruby</figcaption>
+            </figure>
+            <figure>
+                <img class="img-portfolio" src="../2-Imersao-CSS/img/programadora4.png" alt="Python">
+                <figcaption>Pesquisadora em Educação e Tecnologia</figcaption>
+            </figure>
+            <figure>
+                 <img class="img-portfolio" src="../2-Imersao-CSS/img/alquimia.png" alt="Alquimia Literária">
+                <figcaption>Blog Alquimia Literária</figcaption>
+             <figure>
+    
+        </div>
+
+    </section>
+    <section class="contato" id="contato">
+        <h2></h2>
+        <div class="grid icons">
+            <a target="_blank" href="https://github.com/SrtaPoe">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/StraPoe">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/joanice-oliveira-3787b3127/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/joanice_oliveira25/">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+</body>
+
+</html>
